@@ -21,7 +21,7 @@
       e.preventDefault();
       let temp = document.getElementById('temp').value;
       let unit = document.getElementById('unit').value;
-      answer.innerHTML = Math.round(tempConvert(temp*1,unit))+(unit === 'C' ? 'F' : 'C');
+      answer.innerHTML = Math.round(tempConvert(temp*1,unit))+(unit === 'C' ? ' F' : ' C');
       console.log(temp,' ',unit)
     });
   </script>
