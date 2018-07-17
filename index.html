@@ -1,0 +1,28 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="main.css">
+      <script src="temp.js"></script>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <form method="POST" action="#" id="converter">
+      <input type="text" id="temp" name="temp">
+      <select name ="unit" id="unit">
+        <option>F</option>
+        <option>C</option>
+      </select>
+      <input type="submit" id="submit" value="CONVERT">
+      <div id="answer"></div>
+    </form>
+  </body>
+  <script>
+    let answer = document.getElementById('answer');
+    document.getElementById('converter').addEventListener('submit',function(e){
+      e.preventDefault();
+      let temp = document.getElementById('temp').value;
+      let unit = document.getElementById('unit').value;
+      answer.innerHTML = Math.round(tempConvert(temp*1,unit))+(unit === 'C' ? 'F' : 'C');
+      console.log(temp,' ',unit)
+    });
+  </script>
+</html>

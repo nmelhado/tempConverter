@@ -5,4 +5,6 @@ const tempConvert = (temp,unit) => {
   return temp * 1.8 +32;
 }
 
-module.exports = tempConvert;
+if(typeof(module) !== 'undefined') {
+  module.exports = tempConvert;
+}

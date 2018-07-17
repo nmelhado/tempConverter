@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  margin: 120px;
+  font-size: 2.0em;
+}
+#answer {
+  margin: 30px;
+  font-size: 3em;
+  color: red;
+  font-weight: 700;
+}
